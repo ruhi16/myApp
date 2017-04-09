@@ -1,5 +1,6 @@
 <?php
-
+use DB;
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +13,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $user = new User;
+    $user->name 	= 'Hari Narayan Das';
+	$user->email 	= 'hndas2016@gmail.com';
+    $user->save();
+    return "Date Saved Successfully";
+    //return view('welcome');
 });
