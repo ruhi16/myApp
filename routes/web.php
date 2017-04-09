@@ -13,11 +13,16 @@ use App\User;
 */
 
 Route::get('/', function () {
-    $user = new User;
-    $user->name 	= 'Ayantika Das';
-    $user->email 	= 'ayantika2011@gmail.com';
-    $user->password	= 'test';
-    $user->save();
-    return "Date Saved Successfully for ayantika";
+    $user = User::all();
+//     $user->name 	= 'Ayantika Das';
+//     $user->email 	= 'ayantika2011@gmail.com';
+//     $user->password	= 'test';
+//     $user->save();
+    foreach($user as $u){
+        echo $u->name;
+        echo $u->email;
+        echo $u->password;
+    }
+    //return "Date Saved Successfully for ayantika";
     //return view('welcome');
 });
