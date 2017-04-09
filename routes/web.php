@@ -19,9 +19,9 @@ Route::get('/', function () {
 //     $user->password	= 'test';
 //     $user->save();
     foreach($user as $u){
-        echo $u->name;
-        echo $u->email;
-        echo $u->password;
+        echo "Name: ".$u->name."<br>";
+        echo "Email: ".$u->email."<br>";
+        echo "Password: ".$u->password."<br><br>";
     }
     //return "Date Saved Successfully for ayantika";
     //return view('welcome');
