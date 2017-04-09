@@ -14,10 +14,10 @@ use App\User;
 
 Route::get('/', function () {
     $user = new User;
-    $user->name 	= 'Hari Narayan Das';
-    $user->email 	= 'hndas2016@gmail.com';
+    $user->name 	= 'Ayantika Das';
+    $user->email 	= 'ayantika2011@gmail.com';
     $user->password	= 'test';
     $user->save();
-    return "Date Saved Successfully";
+    return "Date Saved Successfully for ayantika";
     //return view('welcome');
 });
