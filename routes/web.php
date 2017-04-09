@@ -15,7 +15,8 @@ use App\User;
 Route::get('/', function () {
     $user = new User;
     $user->name 	= 'Hari Narayan Das';
-	$user->email 	= 'hndas2016@gmail.com';
+    $user->email 	= 'hndas2016@gmail.com';
+    $user->password	= 'test';
     $user->save();
     return "Date Saved Successfully";
     //return view('welcome');
