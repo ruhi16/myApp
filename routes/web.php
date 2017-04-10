@@ -22,7 +22,7 @@ Route::get('/', function () {
         echo "Email: ".$u->email."<br>";
         echo "Password: ".$u->password."<br><br>";
     }
-    echo "Change effected, from school... :)";
+    echo "Change effected, from school, now Home... :)";
     //return "Date Saved Successfully for ayantika";
     //return view('welcome');
 });
