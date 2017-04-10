@@ -2,7 +2,7 @@
 
 return [
 
-    'default' => 'pgsql',  
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     'connections' => [
 
